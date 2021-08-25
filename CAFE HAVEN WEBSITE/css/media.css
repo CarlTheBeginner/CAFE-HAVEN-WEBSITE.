@@ -1,0 +1,162 @@
+@media (max-width: 1199.98px) {
+  .hero {
+    padding: 0 3.2rem;
+  }
+}
+
+@media (max-width: 991.98px) {
+  .hero-title {
+    font-size: 3.2rem;
+  }
+
+  .hero-text {
+    font-size: 1.4rem;
+  }
+
+  .about-header {
+    font-size: 3.6rem;
+  }
+
+  .about-title {
+    font-size: 2.4rem;
+  }
+
+  .about-text {
+    font-size: 1.4rem;
+  }
+
+  .bestseller-header {
+    font-size: 3.6rem;
+  }
+
+  .product-img-container {
+    width: 100%;
+  }
+
+  .section-about {
+    padding: 8rem 0;
+  }
+
+  .testimonial-header {
+    font-size: 3.6rem;
+  }
+
+  .test-icon {
+    font-size: 2.4rem;
+  }
+
+  .testimonial-text {
+    font-size: 1.2rem;
+  }
+
+  .section-footer h1 {
+    font-size: 1.6rem;
+  }
+
+  .testimonial-container {
+    width: 100%;
+  }
+
+  .nav-link-list {
+    font-size: 1.2rem;
+  }
+
+  /* MOBILE NAVIGATION */
+  .btn-mobile-nav {
+    display: block;
+    z-index: 9999;
+  }
+
+  .nav-list {
+    background-color: #ffec99;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100vh;
+    transform: translateX(100%);
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: all 0.5s ease-in;
+
+    /* Hide navigation */
+    /* Allows no transitions at all */
+    /* display: none; */
+
+    /* 1. Hide it visually */
+    opacity: 0;
+
+    /* 2. Make it unaccesible to mouse and keyboard */
+    pointer-events: none;
+
+    /* 3. Hide it from screen readers */
+    visibility: hidden;
+  }
+
+  .nav-open .nav-list {
+    opacity: 1;
+    pointer-events: auto;
+    visibility: visible;
+    transform: translateX(0);
+  }
+
+  .nav-open .icon-mobile-nav[name="close-outline"] {
+    display: block;
+  }
+
+  .nav-open .icon-mobile-nav[name="menu-outline"] {
+    display: none;
+  }
+
+  .nav-link {
+    flex-direction: column;
+    gap: 4.8rem;
+  }
+
+  .nav-link-list:link,
+  .nav-link-list:visited {
+    font-size: 3rem;
+  }
+}
+
+@media (max-width: 767.98px) {
+  .testimonial {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  .hero {
+    grid-template-columns: 1fr;
+    justify-items: center;
+    text-align: center;
+    gap: 3.2rem;
+  }
+
+  .hero-img {
+    width: 80%;
+  }
+}
+
+@media (max-width: 575.98px) {
+  .about {
+    display: grid;
+    grid-template-columns: repeat(1, 1fr);
+    gap: 3.2rem;
+    align-items: center;
+    margin-bottom: 3.2rem;
+  }
+
+  .bestseller {
+    grid-template-columns: 1fr;
+  }
+
+  .testimonial {
+    grid-template-columns: repeat(1, 1fr);
+    justify-items: center;
+  }
+
+  .testimonial-container {
+    width: 80%;
+  }
+}
